@@ -36,7 +36,8 @@ public class TaskListPage {
 		private WebElement createCust; //declaration
 		
 		
-		
+		@FindBy(xpath="//div[@class='titleEditButtonContainer']/div[@class='title']")
+		private WebElement actualCustomerFld;
 		
 		
 		
@@ -46,49 +47,52 @@ public class TaskListPage {
 		}
 
 		
-		public void addNew() {
+		public WebElement getAddNewBtn() {
 			                                     //utilization
-		    addNew.click();
+		   return addNew;
 		}
 		
 		
-		public void newCust() {
+		public WebElement getNewCustomerBtn() {
 	                                             //utilization
-			newcust.click();
+		return	newcust;
              }
 		
 		
-		public void custName() {
+		public WebElement getEnterCustNameTbx() {
             //utilization
-          custName.sendKeys("HDFC_002");
+         return custName;
          }
 		
-		public void custDes() {
+		public WebElement getEnterCustDespTbx() {
             //utilization
-			custDes.click();
-			custDes.sendKeys("Banking Project");
-           }
-		
-		public void selectCust() {
-            //utilization
-			selectCust.click();
+			return custDes;
 			
            }
 		
-		public void selectComp() {
+		public WebElement getSelectCustDD() {
+            //utilization
+			return selectCust;
+			
+           }
+		
+		public WebElement getBigBangCompany() {
             Reporter.log("company selected",true);     //utilization
-			selectComp.click();
+			return selectComp;
 			
            }
 		
-		public void createCust() {
+		public WebElement getCreateCustomerBtn() {
             //utilization
-			createCust.click();
+			return createCust;
 			
            }
 		
 		
 		
+		public WebElement getActualCustomerFld() {
+			return actualCustomerFld;
+		}
 		
 		
 		}

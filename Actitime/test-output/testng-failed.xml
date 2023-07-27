@@ -5,8 +5,8 @@
     <classes>
       <class name="com.actitime.testscript.CustomerModule">
         <methods>
-          <include name="closeBrowser"/>
           <include name="logout"/>
+          <include name="closeBrowser"/>
           <include name="login"/>
           <include name="testCreateCustomer"/>
           <include name="openBrowser"/>

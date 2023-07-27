@@ -47,18 +47,6 @@ public class BaseClass {
 		l.setLogin(un, pw);
 		
 	
-	   HomePage h=new HomePage(driver);
-	    h.setTasksTab();
-	    
-	    
-	    TaskListPage t=new TaskListPage(driver);
-	    t.addNew();
-	    t.newCust();
-	    t.custName();
-	    t.custDes();
-	    t.selectCust();
-	    t.selectComp();
-	    t.createCust();
 	   
 	
 	}

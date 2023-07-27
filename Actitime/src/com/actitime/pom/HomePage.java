@@ -19,13 +19,13 @@ public class HomePage {
 		PageFactory.initElements(driver, this); //initilization
 	}
 
-	public void setLogout() throws InterruptedException {
+	public WebElement setLogout() throws InterruptedException {
 		   Thread.sleep(4000);                             //utilization
-	    logout.click();
+	    return logout;
 	}
 	
-	public void setTasksTab() {
+	public WebElement setTasksTab() {
                                         //utilization
-           tasksTab.click();
+          return tasksTab;
 }
 }
